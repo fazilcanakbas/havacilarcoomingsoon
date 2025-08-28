@@ -100,7 +100,7 @@ export default function Home() {
                     className="group inline-flex items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-cyan-500/25"
                   >
                     <Phone className="mr-3 w-5 h-5" />
-                    Hemen Ara: +90 530 620 06 85
+                    İletişim: +90 530 620 06 85
                   </a>
                   <a
                     href="mailto:info@havacilar.com.tr"
