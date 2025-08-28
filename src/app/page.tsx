@@ -85,7 +85,7 @@ export default function Home() {
               >
                 Gayrimenkul ve havacılık sektörlerinde öncü projelerle,
                 <span className="text-cyan-300 font-semibold"> güvenilir yatırım </span>
-                fırsatları sunmaya hazırlanıyoruz. Yeni sitemizle daha iyi bir deneyim için çalışıyoruz.
+                fırsatları sunuyoruz. Sizlere daha iyi deneyim sunmak için sitemizde bakım çalışması yapıyoruz.
               </motion.p>
 
               <motion.div
