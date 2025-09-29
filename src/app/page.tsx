@@ -60,9 +60,9 @@ export default function Home() {
        
 
         {/* Add top padding on small screens so content doesn't sit under the header; keep vertical centering for md+ */}
-  <div className="container mx-auto px-4 z-20 relative pt-32 md:pt-0 h-full pb-16 md:pb-0">
-          {/* Use full height flex to re-center content on desktop while preserving mobile top padding */}
-          <div className="flex flex-col justify-start md:justify-center h-full">
+  <div className="container mx-auto px-4 z-20 relative flex flex-col pt-32 md:pt-0 pb-16 md:pb-0">
+          {/* Desktop: use grow + justify-center, Mobile: content starts below header */}
+          <div className="flex-1 flex flex-col justify-start md:justify-center">
             <div className="text-center text-white space-y-10 max-w-5xl mx-auto w-full">
               
 
