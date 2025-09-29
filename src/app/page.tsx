@@ -43,7 +43,8 @@ export default function Home() {
       </header>
 
       {/* Hero Section - Coming Soon */}
-  <section className="relative h-screen flex overflow-hidden">
+  {/* Use min-h with dynamic viewport units so mobile browser chrome değişince kesilmesin. Remove overflow-hidden to allow scroll. */}
+  <section className="relative min-h-[100dvh] flex">
         {/* Background with gradient overlay */}
      
  <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/60 to-transparent z-10"></div>
@@ -59,7 +60,7 @@ export default function Home() {
        
 
         {/* Add top padding on small screens so content doesn't sit under the header; keep vertical centering for md+ */}
-        <div className="container mx-auto px-4 z-20 relative pt-32 md:pt-0 h-full">
+  <div className="container mx-auto px-4 z-20 relative pt-32 md:pt-0 h-full pb-16 md:pb-0">
           {/* Use full height flex to re-center content on desktop while preserving mobile top padding */}
           <div className="flex flex-col justify-start md:justify-center h-full">
             <div className="text-center text-white space-y-10 max-w-5xl mx-auto w-full">
@@ -88,7 +89,7 @@ export default function Home() {
               >
                Havacılık sektörünün yatırım birlikteliği 
                 <span className="text-cyan-300 font-semibold"> Havacılar A.Ş. </span>
-                gayrimenkul ve havacılık yatırım imkanları üretmeye devam ediyor.Çok yakında sitemiz yeni arayüzü ile hizmetinize yeniden açılıcaktır.
+                gayrimenkul ve havacılık sektöründe yatırım imkanları üretmeye devam ediyor. Çok yakında sitemiz yeni arayüzü ile hizmetinize yeniden açılıcaktır.
               </motion.p>
 
               <motion.div
