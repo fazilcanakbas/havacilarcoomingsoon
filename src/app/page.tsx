@@ -21,7 +21,8 @@ export default function Home() {
   return (
     <div className="font-sans">
       {/* Header with Logo */}
-      <header className="absolute top-0 left-0 right-0 z-30 p-6">
+  {/* Absolute header causes overlap on small screens; keep it but ensure content below has top padding */}
+  <header className="absolute top-0 left-0 right-0 z-30 p-4 sm:p-6">
         <div className="container mx-auto">
           <div className="flex items-center">
             <div className="flex items-center space-x-3">
@@ -42,7 +43,7 @@ export default function Home() {
       </header>
 
       {/* Hero Section - Coming Soon */}
-      <section className="relative h-screen flex items-center overflow-hidden">
+  <section className="relative h-screen flex overflow-hidden">
         {/* Background with gradient overlay */}
      
  <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-blue-800/60 to-transparent z-10"></div>
@@ -57,13 +58,14 @@ export default function Home() {
           </video>
        
 
-        <div className="container mx-auto px-4 z-20 relative">
-          <div className="flex items-center justify-center min-h-[80vh]">
+        {/* Add top padding on small screens so content doesn't sit under the header; keep vertical centering for md+ */}
+        <div className="container mx-auto px-4 z-20 relative pt-32 md:pt-0">
+          <div className="flex items-start md:items-center justify-center min-h-[80vh]">
             <div className="text-center text-white space-y-10 max-w-5xl mx-auto w-full">
               
 
               <motion.h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
+                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.6 }}
@@ -72,7 +74,7 @@ export default function Home() {
                 <span className="block bg-gradient-to-r from-cyan-400 via-blue-300 to-cyan-400 bg-clip-text text-transparent mb-4">
                   Güncelleniyor
                 </span>
-                <span className="block text-white text-3xl md:text-4xl lg:text-5xl">
+                <span className="block text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                   Yakın Zamanda Erişime Açılacak
                 </span>
               </motion.h1>
@@ -83,9 +85,9 @@ export default function Home() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.9 }}
               >
-                Gayrimenkul ve havacılık sektörlerinde öncü projelerle,
-                <span className="text-cyan-300 font-semibold"> güvenilir yatırım </span>
-                fırsatları sunuyoruz. Sizlere daha iyi deneyim sunmak için sitemizde bakım çalışması yapıyoruz.
+               Havacılık sektörünün yatırım birlikteliği 
+                <span className="text-cyan-300 font-semibold"> Havacılar A.Ş. </span>
+                gayrimenkul ve havacılık yatırım imkanları üretmeye devam ediyor.Çok yakında sitemiz yeni arayüzü ile hizmetinize yeniden açılıcaktır.
               </motion.p>
 
               <motion.div
@@ -100,7 +102,7 @@ export default function Home() {
                     className="group inline-flex items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-cyan-500/25"
                   >
                     <Phone className="mr-3 w-5 h-5" />
-                    İletişim: +90 530 620 06 85
+                    İletişim: +90 (242) 505 64 86
                   </a>
                   <a
                     href="mailto:info@havacilar.com.tr"
