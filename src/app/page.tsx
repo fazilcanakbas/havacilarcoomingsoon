@@ -115,21 +115,55 @@ export default function Home() {
                   </a>
                 </div>
 
-                {/* Services Preview */}
+                {/* Company Logos */}
                 <motion.div
-                  className="flex flex-col sm:flex-row gap-6 mt-8"
+                  className="flex flex-col sm:flex-row gap-6 sm:gap-8 mt-8 items-center justify-center"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 1.5 }}
                 >
-                  <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg px-6 py-3">
-                    <Building2 className="w-6 h-6 text-cyan-300 mr-3" />
-                    <span className="text-white font-medium">Gayrimenkul Yatırımları</span>
-                  </div>
-                  <div className="flex items-center bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg px-6 py-3">
-                    <Plane className="w-6 h-6 text-cyan-300 mr-3" />
-                    <span className="text-white font-medium">Havacılık Yatırımları</span>
-                  </div>
+                  <a 
+                    href="https://havacilaregitim.com.tr" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="transition-transform duration-300 hover:scale-110"
+                  >
+                    <Image
+                      src="/havacilareğitim2.png"
+                      alt="Havacılar Eğitim"
+                      width={300}
+                      height={300}
+                      className="object-contain"
+                    />
+                  </a>
+                  <a 
+                    href="https://havacilaryatirim.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="transition-transform duration-300 hover:scale-110"
+                  >
+                    <Image
+                      src="/havacilaryatirim.png"
+                      alt="Havacılar Yatırım"
+                      width={300}
+                      height={300}
+                      className="object-contain"
+                    />
+                  </a>
+                  <a 
+                    href="https://havacilartechnic.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="transition-transform duration-300 hover:scale-110"
+                  >
+                    <Image
+                      src="/havacilarteknik.png"
+                      alt="Havacılar Teknik"
+                      width={300}
+                      height={300}
+                      className="object-contain"
+                    />
+                  </a>
                 </motion.div>
 
               </motion.div>
