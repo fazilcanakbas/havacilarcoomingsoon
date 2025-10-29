@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Havacılar Yatırım A.Ş.",
-  description: "Havacılar Yatırım A.Ş. - Gayrimenkul ve Havacılık Yatırımları",
+  title: "Havacılar Group",
+  description: "Havacılar Group - Gayrimenkul ve Havacılık Yatırımları",
 };
 
 export default function RootLayout({
